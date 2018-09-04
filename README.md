@@ -3,7 +3,7 @@
 
 This is the third project of ***[Udacity Full Stack Web Developer Nanodegree Program](https://classroom.udacity.com/nanodegrees/nd004/)*** .
 
-A database reporting tool that analyzes a large database using complex SQL queries for getting answers to some questions.
+*A database reporting tool that analyzes a large database using complex SQL queries for getting answers to some questions*
 
 ## Introduction
 This project, basically, requires the students to analyze a large database (> 1000k rows) using complex SQL queries to get some business questions answered. Final solution is a python script with embedded SQL queries to:
@@ -25,7 +25,7 @@ The database named **news** consists of three default tables named ***authors***
 
 ## Project Contents
 The project repository consists of the following files:
--    **logs_analysis.py**  --- The Python program that connects to the database, executes the queries, displays and saves the results.
+-  **logs_analysis.py**  --- The Python program that connects to the database, executes the queries, displays and saves the results.
 -  **results.txt**  --- The text file having the formatted results of the test run.
 -  **scrn1.png** and **scrn2.png** are the screenshots of the test run.
 -  And a **ReadMe** file :D
@@ -52,9 +52,9 @@ Other dependencies include:
  3. Get the vagrant setup files from  [here](https://github.com/udacity/fullstack-nanodegree-vm)
  4. Dowload or clone these files in a separate directory on your desktop
  5. Download and unzip this [database](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip)
-6.  Extract the ***newsdata.sql*** file from the downloaded archive and place it into the **vagrant** directory
-7.  Download this [log analysis project](https://github.com/abdullah-22/Logs-Analysis-Project/archive/master.zip) or [clone](https://github.com/abdullah-22/Logs-Analysis-Project) it to your PC.
-8.  Copy all the project files in a new directory within the previously created **vagrant**  directory
+ 6. Extract the ***newsdata.sql*** file from the downloaded archive and place it into the **vagrant** directory
+ 7. Download this [log analysis project](https://github.com/abdullah-22/Logs-Analysis-Project/archive/master.zip) or [clone](https://github.com/abdullah-22/Logs-Analysis-Project) it to your PC.
+ 8. Copy all the project files in a new directory within the previously created **vagrant**  directory
 
 ### *Setting up the VM*
 
@@ -72,7 +72,7 @@ Other dependencies include:
 Only one database view needs to be created in my solution i.e. ***daily_requests_stats*** view.
 - This view can be created for temporary purpose by un-commenting the `create_view()`  function in  ***line no. 165*** of the **logs_analysis.py** file before running it **or**
 - for permanent by directly running the following create view query in the **psql** console:
-```
+``` sql
 CREATE OR REPLACE VIEW daily_request_stats AS
         WITH daily_hits AS (
             SELECT date(time) AS date, count(*) AS d_hits
