@@ -1,4 +1,4 @@
-# Project # 03: Logs Analysis Project
+# Project # 03: Logs Analysis
 ## by Abdullah A. Salman
 
 This is the third project of ***[Udacity Full Stack Web Developer Nanodegree Program](https://classroom.udacity.com/nanodegrees/nd004/)*** .
